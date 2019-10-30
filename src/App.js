@@ -3,12 +3,11 @@ import React from 'react';
 
 function App() {
   return (
-    <div>
-      <header>
+    <h1>
         Hello React
-      </header>
-    </div>
+    </h1>
   );
 }
+
 
 export default App;
