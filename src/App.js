@@ -1,6 +1,16 @@
 import React,{ Component } from 'react';
 
-const App =()=> (<Counter></Counter>)
+const App =()=> ( 
+  <React.Fragment>
+    <Counter></Counter>
+    <Tweet userName={"あべ"} />
+    <Tweet userName={"いのうえ"} />
+  </React.Fragment>
+)
+
+const Tweet =(props)=>{
+  return <div>ユーザー{props.userName}</div>
+}
 
 class Counter extends Component {
   constructor(props){
@@ -15,6 +25,7 @@ class Counter extends Component {
   handleMinusButton =()=>{
     this.setState({count: this.state.count - 1})
   }
+
 
   render (){
     return (
